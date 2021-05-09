@@ -31,3 +31,27 @@ var lengthOfLongestSubstring = function(s) {
 };
 ```
 ![](https://i.loli.net/2021/05/09/fyw6TecHuGJKAVr.png)
+
+
+var lengthOfLongestSubstring = function(s) {
+    if(!s) return 0;
+    if(s.length == 1) return 1;
+    
+    var maxLen = 0;
+    var l = 0;
+    var r = 0;
+    var count = new Set();
+    count.add(s[0]);
+
+    for(let i = 0;i < s.length;i++){
+        if(i !== 0){
+            count.delete(s[i-1]);
+        }
+        while(!count.has(s[r+1]) && r < s.length - 1){
+            count.add(s[r+1]);
+            r++;
+        }
+        maxLen = Math.max(maxLen,r - i + 1);
+    }
+    return maxLen;
+};
