@@ -1,3 +1,7 @@
+## leetcode3_无重复字符的最长子串
+
+
+
 思路：
 
 > 初始化：左右指针位于0，变量maxLen记录最大的长度，set数据结构count记录已有字符串中的字符。
@@ -30,9 +34,14 @@ var lengthOfLongestSubstring = function(s) {
     return maxLen;
 };
 ```
-![](https://i.loli.net/2021/05/09/fyw6TecHuGJKAVr.png)
+
+<img src="/Users/mozhanghao/Desktop/屏幕快照 2021-05-09 下午21.27.31 下午.png" alt="屏幕快照 2021-05-09 下午21.27.31 下午" style="zoom:50%;" />
 
 
+
+### 改进之后
+
+```javascript
 var lengthOfLongestSubstring = function(s) {
     if(!s) return 0;
     if(s.length == 1) return 1;
@@ -55,3 +64,9 @@ var lengthOfLongestSubstring = function(s) {
     }
     return maxLen;
 };
+```
+
+
+
+![](https://i.loli.net/2021/05/09/j9YtOSsflU7ZFgx.png)
+
