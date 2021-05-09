@@ -35,8 +35,7 @@ var lengthOfLongestSubstring = function(s) {
 };
 ```
 
-<img src="/Users/mozhanghao/Desktop/屏幕快照 2021-05-09 下午21.27.31 下午.png" alt="屏幕快照 2021-05-09 下午21.27.31 下午" style="zoom:50%;" />
-
+![](https://i.loli.net/2021/05/09/fyw6TecHuGJKAVr.png)
 
 
 ### 改进之后
